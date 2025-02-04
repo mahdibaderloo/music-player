@@ -782,6 +782,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
+  }
   .h-screen {
     height: 100vh;
   }
@@ -794,8 +797,14 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-full {
+    width: 100%;
   }
   .w-screen {
     width: 100vw;
@@ -1296,6 +1305,9 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
   .rounded-s {
     border-start-start-radius: 0.25rem;
     border-end-start-radius: 0.25rem;
@@ -1419,6 +1431,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-pink-500 {
+    background-color: var(--color-pink-500);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1427,6 +1442,9 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
