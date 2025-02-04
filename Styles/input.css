@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@layer base {
+    @font-face {
+        font-family: dosis;
+        src: url("../Fonts/Dosis-Regular.ttf");
+    }
+}

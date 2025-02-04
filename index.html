@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Styles/reset.css">
     <link rel="stylesheet" href="Styles/app.css">
 </head>
-<body class="w-full h-screen bg-pink-500 flex justify-center items-center">
+<body class="w-full h-screen bg-pink-500 flex justify-center items-center font-[dosis]">
     
-    <div class="container w-1/2 h-96 bg-white rounded-3xl flex"></div>
+    <div class="container w-1/2 h-96 bg-white rounded-3xl overflow-hidden flex">
+
+        <div id="left" class="w-1/2 h-full">
+            <img id="cover" src="" class="w-full h-full" alt="cover">
+        </div>
+
+        <div id="right" class="w-1/2 h-full p-2 flex flex-col justify-evenly">
+            <div id="information-box" class="flex justify-center items-center">
+                <div id="information" class="w-full flex flex-col">
+                    <h3 id="music-name" class="text-2xl font-bold">music name</h3>
+                    <p id="singer" class="text-lg ">singer name</p>
+                </div>
+                <img id="like" src="Images/Svg/heart-stroke.svg" class="w-8 cursor-pointer" alt="like">
+            </div>
+            <div id="timeline-box" class="w-full flex flex-col gap-4">
+                <div id="duration-box" class="flex justify-between items-center px-1">
+                    <span id="current-time">2:30</span>
+                    <span id="duration">3:45</span>
+                </div>
+                <div id="progress" class="bg-slate-900 w-full h-2 rounded-3xl cursor-pointer"></div>
+            </div>
+            <div id="tools" class="flex justify-between items-center">
+                <img id="shuffle" class="w-8 cursor-pointer" src="Images/Svg/shuffle.svg" alt="">
+                <img id="back" class="w-8 cursor-pointer" src="Images/Svg/back.svg" alt="">
+                <img id="play-pause" class="w-8 cursor-pointer" src="Images/Svg/play.svg" alt="">
+                <img id="next" class="w-8 cursor-pointer" src="Images/Svg/next.svg" alt="">
+                <img id="repeat" class="w-8 cursor-pointer" src="Images/Svg/repeat.svg" alt="">
+            </div>
+        </div>
+    </div>
 
     <script src="Js/app.js"></script>
 
