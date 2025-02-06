@@ -6,3 +6,7 @@
         src: url("../Fonts/Dosis-Regular.ttf");
     }
 }
+
+@theme {
+    --custom-shadow : box-shadow: 0 0 0 5px #000;
+}
