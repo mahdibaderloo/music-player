@@ -1,6 +1,8 @@
 // DOM Elements //
 
 const cover = document.getElementById('cover')
+const light = document.getElementById('light')
+const dark = document.getElementById('dark')
 const musicName = document.getElementById('music-name')
 const singer = document.getElementById('singer')
 const like = document.getElementById('like')
@@ -15,3 +17,18 @@ const next = document.getElementById('next')
 const repeat = document.getElementById('repeat')
 const repeatOne = document.getElementById('repeat-one')
 const shuffle = document.getElementById('shuffle')
+
+
+// Dark And Light Mode //
+
+dark.addEventListener('click', () => {
+    let htmlTag = document.getElementsByTagName('html')[0]
+    htmlTag.classList.add('dark')
+    light.classList.remove('hidden')
+})
+
+light.addEventListener('click', () => {
+    let htmlTag = document.getElementsByTagName('html')[0]
+    htmlTag.classList.remove('dark')
+    light.classList.add('hidden')
+})
