@@ -785,11 +785,14 @@
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
+  .h-24 {
+    height: calc(var(--spacing) * 24);
   }
-  .h-3\/4 {
-    height: calc(3/4 * 100%);
+  .h-72 {
+    height: calc(var(--spacing) * 72);
+  }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
   }
   .h-full {
     height: 100%;
@@ -812,17 +815,26 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-3xs {
+    width: var(--container-3xs);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
-  .w-8 {
-    width: calc(var(--spacing) * 8);
+  .w-24 {
+    width: calc(var(--spacing) * 24);
   }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
+  .w-60 {
+    width: calc(var(--spacing) * 60);
   }
-  .w-\[90\%\] {
-    width: 90%;
+  .w-72 {
+    width: calc(var(--spacing) * 72);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
   }
   .w-full {
     width: 100%;
@@ -1473,9 +1485,6 @@
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
   }
-  .bg-slate-50 {
-    background-color: var(--color-slate-50);
-  }
   .bg-slate-900 {
     background-color: var(--color-slate-900);
   }
@@ -1602,9 +1611,6 @@
   }
   .fill-none {
     fill: none;
-  }
-  .fill-slate-400 {
-    fill: var(--color-slate-400);
   }
   .fill-slate-900 {
     fill: var(--color-slate-900);
@@ -1799,9 +1805,6 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
-  }
-  .text-slate-400 {
-    color: var(--color-slate-400);
   }
   .text-slate-700 {
     color: var(--color-slate-700);
@@ -2256,6 +2259,61 @@
   .transform-view {
     transform-box: view-box;
   }
+  .sm\:h-80 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 80);
+    }
+  }
+  .sm\:h-\[80\%\] {
+    @media (width >= 40rem) {
+      height: 80%;
+    }
+  }
+  .sm\:h-\[90\%\] {
+    @media (width >= 40rem) {
+      height: 90%;
+    }
+  }
+  .sm\:h-\[95\%\] {
+    @media (width >= 40rem) {
+      height: 95%;
+    }
+  }
+  .sm\:w-80 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 80);
+    }
+  }
+  .sm\:w-\[70\%\] {
+    @media (width >= 40rem) {
+      width: 70%;
+    }
+  }
+  .sm\:w-\[80\%\] {
+    @media (width >= 40rem) {
+      width: 80%;
+    }
+  }
+  .sm\:w-\[90\%\] {
+    @media (width >= 40rem) {
+      width: 90%;
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .sm\:rounded-3xl {
+    @media (width >= 40rem) {
+      border-radius: var(--radius-3xl);
+    }
+  }
+  .md\:rounded-3xl {
+    @media (width >= 48rem) {
+      border-radius: var(--radius-3xl);
+    }
+  }
   .lg\:h-96 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 96);
@@ -2291,29 +2349,14 @@
       background-color: var(--color-slate-900);
     }
   }
-  .dark\:fill-current {
-    &:where(.dark, .dark *) {
-      fill: currentColor;
-    }
-  }
   .dark\:fill-slate-400 {
     &:where(.dark, .dark *) {
       fill: var(--color-slate-400);
     }
   }
-  .dark\:stroke-current {
-    &:where(.dark, .dark *) {
-      stroke: currentColor;
-    }
-  }
   .dark\:stroke-slate-400 {
     &:where(.dark, .dark *) {
       stroke: var(--color-slate-400);
-    }
-  }
-  .dark\:stroke-4 {
-    &:where(.dark, .dark *) {
-      stroke-width: 4;
     }
   }
   .dark\:text-slate-200 {
