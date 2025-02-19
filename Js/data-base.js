@@ -18,8 +18,8 @@ const media = [
   },
   {
     id: 3,
-    musicName: "Niagara Falls (Foot or 2)",
-    singer: "Travis Scott & 21 Savage",
+    musicName: "Tuborg (Acoustic Version)",
+    singer: "Mehyad & Lenna",
     src: "https://dl.behmelody.in/1403/04/01/Travis%20Scott%20-%20Niagara%20Falls%20(Foot%20or%202)%20(128).mp3",
     cover:
       "https://i1.sndcdn.com/artworks-XXlQzMozz5HrqFMi-ZzywGA-t1080x1080.jpg",
@@ -36,10 +36,12 @@ const media = [
   },
   {
     id: 5,
-    musicName: "Movazebam Bash",
-    singer: "The Don",
+    musicName: "Dark Days",
+    singer: "21 Savage",
     src: "https://dl.tiktokmusics.ir/music/Dark%20Days%20By%2021Savage.mp3",
     cover: "https://i1.sndcdn.com/artworks-0e2cvZrtJ8vK-0-t500x500.jpg",
     like: false,
   },
 ];
+
+export { media };
