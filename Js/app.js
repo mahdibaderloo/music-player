@@ -56,12 +56,16 @@ function showMusic() {
 // Play Music //
 
 play.addEventListener("click", () => {
+  playMusic();
+});
+
+function playMusic() {
   audio.load();
   audio.play();
 
   play.classList.add("hidden");
   pause.classList.remove("hidden");
-});
+}
 
 // Pause Music //
 
@@ -80,6 +84,7 @@ next.addEventListener("click", () => {
     index = 0;
   }
   showMusic();
+  playMusic();
 });
 
 // Prev Music //
@@ -90,6 +95,7 @@ prev.addEventListener("click", () => {
     index = media.length - 1;
   }
   showMusic();
+  playMusic();
 });
 
 // Window //
