@@ -13,6 +13,7 @@ const dislike = document.getElementById("dislike");
 const currentTime = document.getElementById("current-time");
 const duration = document.getElementById("duration");
 const playlist = document.getElementById("playlist");
+const playlistBox = document.getElementById("playlist-box");
 const prev = document.getElementById("prev");
 const play = document.getElementById("play");
 const pause = document.getElementById("pause");
@@ -117,6 +118,38 @@ shuffle.addEventListener("click", () => {
   repeatOne.classList.add("hidden");
   shuffle.classList.add("hidden");
 });
+
+// Playlist //
+
+playlist.addEventListener("click", () => {
+  if (cover.classList.contains("hidden")) {
+    cover.classList.remove("hidden");
+    playlistBox.classList.add("hidden");
+  } else {
+    cover.classList.add("hidden");
+    playlistBox.classList.remove("hidden");
+
+    playlistBox.innerHTML = "";
+    media.forEach((item) => {
+      createPlaylist(item);
+    });
+  }
+});
+
+function createPlaylist(item) {
+  playlistBox.insertAdjacentHTML(
+    "beforeend",
+    `
+             <li class="flex gap-3 shadow p-1 mb-1.5">
+            <img src="${item.cover}" alt="" class="w-14 h-14 rounded-lg" />
+            <div>
+              <p class="font-bold text-2xl dark:text-white">${item.musicName}</p>
+              <p class="dark:text-slate-400">${item.singer}</p>
+            </div>
+          </li>
+    `
+  );
+}
 
 // Window //
 
