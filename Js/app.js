@@ -64,6 +64,15 @@ play.addEventListener("click", () => {
   pause.classList.remove("hidden");
 });
 
+// Pause Music //
+
+pause.addEventListener("click", () => {
+  audio.pause();
+
+  play.classList.remove("hidden");
+  pause.classList.add("hidden");
+});
+
 // Window //
 
 window.addEventListener("load", () => {
