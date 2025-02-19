@@ -38,12 +38,16 @@ light.addEventListener("click", () => {
 
 function showRandomMusic() {
   let randomId = Math.floor(Math.random() * 5) + 1;
-  console.log(randomId);
   media.forEach((item) => {
     if (randomId === item.id) {
       cover.src = item.cover;
       musicName.innerHTML = item.musicName;
       singer.innerHTML = item.singer;
+
+      if (item.like) {
+        like.classList.add("hidden");
+        dislike.classList.remove("hidden");
+      }
     }
   });
 }
