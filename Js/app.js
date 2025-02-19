@@ -80,7 +80,7 @@ pause.addEventListener("click", () => {
 
 next.addEventListener("click", () => {
   index++;
-  if (index === media.length - 1) {
+  if (index === media.length) {
     index = 0;
   }
   showMusic();
