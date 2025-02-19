@@ -1,9 +1,5 @@
 import { media } from "../Js/data-base.js";
 
-// Variables //
-
-let index = 0;
-
 // DOM Elements //
 
 const cover = document.getElementById("cover");
@@ -24,6 +20,10 @@ const next = document.getElementById("next");
 const repeat = document.getElementById("repeat");
 const repeatOne = document.getElementById("repeat-one");
 const shuffle = document.getElementById("shuffle");
+
+// Variables //
+
+let index = 0;
 
 // Dark And Light Mode //
 
@@ -96,6 +96,26 @@ prev.addEventListener("click", () => {
   }
   showMusic();
   playMusic();
+});
+
+// Repeat //
+
+repeat.addEventListener("click", () => {
+  repeat.classList.add("hidden");
+  repeatOne.classList.remove("hidden");
+  shuffle.classList.add("hidden");
+});
+
+repeatOne.addEventListener("click", () => {
+  repeat.classList.add("hidden");
+  repeatOne.classList.add("hidden");
+  shuffle.classList.remove("hidden");
+});
+
+shuffle.addEventListener("click", () => {
+  repeat.classList.remove("hidden");
+  repeatOne.classList.add("hidden");
+  shuffle.classList.add("hidden");
 });
 
 // Window //
