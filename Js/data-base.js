@@ -20,7 +20,7 @@ const media = [
     id: 3,
     musicName: "Tuborg (Acoustic Version)",
     singer: "Mehyad & Lenna",
-    src: "https://dl.behmelody.in/1403/04/01/Travis%20Scott%20-%20Niagara%20Falls%20(Foot%20or%202)%20(128).mp3",
+    src: "https://dl.solahangs.com/Album/1402/12/Mehyad%20%26%20Lenna/128/05.Mehyad%20%26%20Lenna%20-%20Tuborg%20%28Acoustic%20Version%29%20%28128%29.mp3",
     cover:
       "https://i1.sndcdn.com/artworks-XXlQzMozz5HrqFMi-ZzywGA-t1080x1080.jpg",
     like: false,
