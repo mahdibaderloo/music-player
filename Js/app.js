@@ -48,10 +48,7 @@ function showMusic() {
   singer.innerHTML = media[index].singer;
   audio.src = media[index].src;
 
-  if (media[index].like) {
-    like.classList.add("hidden");
-    dislike.classList.remove("hidden");
-  }
+  changeLike();
 }
 
 // Play Music //
@@ -149,6 +146,36 @@ function createPlaylist(item) {
           </li>
     `
   );
+}
+
+// Like //
+
+like.addEventListener("click", () => {
+  let findItem = media.find(
+    (item) =>
+      item.cover === cover.src && item.musicName === musicName.textContent
+  );
+  findItem.like = true;
+  changeLike();
+});
+
+dislike.addEventListener("click", () => {
+  let findItem = media.find(
+    (item) =>
+      item.cover === cover.src && item.musicName === musicName.textContent
+  );
+  findItem.like = false;
+  changeLike();
+});
+
+function changeLike() {
+  if (media[index].like) {
+    like.classList.add("hidden");
+    dislike.classList.remove("hidden");
+  } else {
+    like.classList.remove("hidden");
+    dislike.classList.add("hidden");
+  }
 }
 
 // Window //
