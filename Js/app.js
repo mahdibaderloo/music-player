@@ -1,5 +1,9 @@
 import { media } from "../Js/data-base.js";
 
+// Variables //
+
+let index = 0;
+
 // DOM Elements //
 
 const cover = document.getElementById("cover");
@@ -35,23 +39,18 @@ light.addEventListener("click", () => {
   light.classList.add("hidden");
 });
 
-// Show Random Music //
+// Show Music //
 
-function showRandomMusic() {
-  let randomId = Math.floor(Math.random() * 5) + 1;
-  media.forEach((item) => {
-    if (randomId === item.id) {
-      cover.src = item.cover;
-      musicName.innerHTML = item.musicName;
-      singer.innerHTML = item.singer;
-      audio.src = item.src;
+function showMusic() {
+  cover.src = media[index].cover;
+  musicName.innerHTML = media[index].musicName;
+  singer.innerHTML = media[index].singer;
+  audio.src = media[index].src;
 
-      if (item.like) {
-        like.classList.add("hidden");
-        dislike.classList.remove("hidden");
-      }
-    }
-  });
+  if (media[index].like) {
+    like.classList.add("hidden");
+    dislike.classList.remove("hidden");
+  }
 }
 
 // Play Music //
@@ -73,8 +72,18 @@ pause.addEventListener("click", () => {
   pause.classList.add("hidden");
 });
 
+// Next Music //
+
+next.addEventListener("click", () => {
+  index++;
+  if (index === 5) {
+    index = 0;
+  }
+  showMusic();
+});
+
 // Window //
 
 window.addEventListener("load", () => {
-  showRandomMusic();
+  showMusic();
 });
