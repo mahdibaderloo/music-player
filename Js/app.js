@@ -7,13 +7,14 @@ const light = document.getElementById("light");
 const dark = document.getElementById("dark");
 const musicName = document.getElementById("music-name");
 const singer = document.getElementById("singer");
+const audio = document.querySelector("audio");
 const like = document.getElementById("like");
 const dislike = document.getElementById("dislike");
 const currentTime = document.getElementById("current-time");
 const duration = document.getElementById("duration");
 const playlist = document.getElementById("playlist");
 const back = document.getElementById("back");
-const playPause = document.getElementById("play");
+const play = document.getElementById("play");
 const pause = document.getElementById("pause");
 const next = document.getElementById("next");
 const repeat = document.getElementById("repeat");
@@ -43,6 +44,7 @@ function showRandomMusic() {
       cover.src = item.cover;
       musicName.innerHTML = item.musicName;
       singer.innerHTML = item.singer;
+      audio.src = item.src;
 
       if (item.like) {
         like.classList.add("hidden");
@@ -51,6 +53,16 @@ function showRandomMusic() {
     }
   });
 }
+
+// Play Music //
+
+play.addEventListener("click", () => {
+  audio.load();
+  audio.play();
+
+  play.classList.add("hidden");
+  pause.classList.remove("hidden");
+});
 
 // Window //
 
