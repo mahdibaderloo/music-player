@@ -17,7 +17,7 @@ const dislike = document.getElementById("dislike");
 const currentTime = document.getElementById("current-time");
 const duration = document.getElementById("duration");
 const playlist = document.getElementById("playlist");
-const back = document.getElementById("back");
+const prev = document.getElementById("prev");
 const play = document.getElementById("play");
 const pause = document.getElementById("pause");
 const next = document.getElementById("next");
@@ -76,8 +76,18 @@ pause.addEventListener("click", () => {
 
 next.addEventListener("click", () => {
   index++;
-  if (index === 5) {
+  if (index === media.length - 1) {
     index = 0;
+  }
+  showMusic();
+});
+
+// Prev Music //
+
+prev.addEventListener("click", () => {
+  index--;
+  if (index === -1) {
+    index = media.length - 1;
   }
   showMusic();
 });
