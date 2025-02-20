@@ -25,6 +25,7 @@ const shuffle = document.getElementById("shuffle");
 // Variables //
 
 let index = 0;
+let isPlaying = false;
 
 // Dark And Light Mode //
 
@@ -60,6 +61,7 @@ play.addEventListener("click", () => {
 function playMusic() {
   audio.load();
   audio.play();
+  isPlaying = true;
 
   play.classList.add("hidden");
   pause.classList.remove("hidden");
@@ -69,6 +71,7 @@ function playMusic() {
 
 pause.addEventListener("click", () => {
   audio.pause();
+  isPlaying = false;
 
   play.classList.remove("hidden");
   pause.classList.add("hidden");
@@ -77,13 +80,17 @@ pause.addEventListener("click", () => {
 // Next Music //
 
 next.addEventListener("click", () => {
+  nextMusic();
+});
+
+function nextMusic() {
   index++;
   if (index === media.length) {
     index = 0;
   }
   showMusic(index);
   playMusic();
-});
+}
 
 // Prev Music //
 
@@ -187,6 +194,10 @@ function selectMusic(el) {
   cover.classList.remove("hidden");
   playlistBox.classList.add("hidden");
 }
+
+// Update Duration //
+
+audio.addEventListener("ended", nextMusic());
 
 // Window //
 
