@@ -61,9 +61,7 @@ play.addEventListener("click", () => {
 });
 
 function playMusic() {
-  if (currentMusicTime !== 0) {
-    audio.currentTime = currentMusicTime;
-  }
+  audio.currentTime = currentMusicTime;
   audio.play();
   isPlaying = true;
 
@@ -83,8 +81,6 @@ function pauseMusic() {
 
   play.classList.remove("hidden");
   pause.classList.add("hidden");
-
-  console.log(currentMusicTime);
 }
 
 // Next Music //
@@ -199,6 +195,15 @@ function changeLike() {
 
 function selectMusic(el) {
   let index = el.id - 1;
+
+  let elementPic = el.children[0].src;
+  let elementMusicName = el.children[1].children[0].textContent;
+
+  if (elementPic !== cover.src && elementMusicName !== musicName.textContent) {
+    currentMusicTime = 0;
+    audio.currentTime = currentMusicTime;
+  }
+
   showMusic(index);
   playMusic();
   cover.classList.remove("hidden");
