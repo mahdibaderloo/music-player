@@ -788,6 +788,12 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-1\/2 {
+    height: calc(1/2 * 100%);
+  }
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
@@ -1402,10 +1408,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-0 {
-    border-style: var(--tw-border-style);
-    border-width: 0px;
-  }
   .border-x {
     border-inline-style: var(--tw-border-style);
     border-inline-width: 1px;
@@ -1462,9 +1464,6 @@
     --tw-border-style: solid;
     border-style: solid;
   }
-  .border-amber-200 {
-    border-color: var(--color-amber-200);
-  }
   .border-slate-900 {
     border-color: var(--color-slate-900);
   }
@@ -1494,12 +1493,6 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
-  }
-  .bg-slate-200 {
-    background-color: var(--color-slate-200);
-  }
-  .bg-slate-400 {
-    background-color: var(--color-slate-400);
   }
   .bg-slate-900 {
     background-color: var(--color-slate-900);
@@ -2292,6 +2285,26 @@
       height: 620px;
     }
   }
+  .sm\:h-\[680px\] {
+    @media (width >= 40rem) {
+      height: 680px;
+    }
+  }
+  .sm\:h-\[700px\] {
+    @media (width >= 40rem) {
+      height: 700px;
+    }
+  }
+  .sm\:h-\[740px\] {
+    @media (width >= 40rem) {
+      height: 740px;
+    }
+  }
+  .sm\:h-full {
+    @media (width >= 40rem) {
+      height: 100%;
+    }
+  }
   .sm\:w-80 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 80);
@@ -2307,9 +2320,19 @@
       border-radius: var(--radius-3xl);
     }
   }
+  .md\:h-full {
+    @media (width >= 48rem) {
+      height: 100%;
+    }
+  }
   .lg\:h-96 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 96);
+    }
+  }
+  .lg\:h-full {
+    @media (width >= 64rem) {
+      height: 100%;
     }
   }
   .lg\:w-1\/2 {
@@ -2335,11 +2358,6 @@
   .dark\:border-slate-400 {
     &:where(.dark, .dark *) {
       border-color: var(--color-slate-400);
-    }
-  }
-  .dark\:bg-slate-100 {
-    &:where(.dark, .dark *) {
-      background-color: var(--color-slate-100);
     }
   }
   .dark\:bg-slate-400 {
