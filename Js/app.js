@@ -42,7 +42,7 @@ light.addEventListener("click", () => {
 
 // Show Music //
 
-function showMusic() {
+function showMusic(index) {
   cover.src = media[index].cover;
   musicName.innerHTML = media[index].musicName;
   singer.innerHTML = media[index].singer;
@@ -81,7 +81,7 @@ next.addEventListener("click", () => {
   if (index === media.length) {
     index = 0;
   }
-  showMusic();
+  showMusic(index);
   playMusic();
 });
 
@@ -92,7 +92,7 @@ prev.addEventListener("click", () => {
   if (index === -1) {
     index = media.length - 1;
   }
-  showMusic();
+  showMusic(index);
   playMusic();
 });
 
@@ -137,7 +137,7 @@ function createPlaylist(item) {
   playlistBox.insertAdjacentHTML(
     "beforeend",
     `
-             <li id="${item.id}" class="flex items-center gap-3 shadow p-1 mb-1.5 cursor-pointer">
+             <li id="${item.id}" class="flex items-center gap-3 shadow p-1 mb-1.5 cursor-pointer" onclick="selectMusic(this)">
             <img src="${item.cover}" alt="" class="w-14 h-14 rounded-lg" />
             <div>
               <p class="font-bold dark:text-white">${item.musicName}</p>
@@ -178,8 +178,20 @@ function changeLike() {
   }
 }
 
+// Select Music //
+
+function selectMusic(el) {
+  let index = el.id - 1;
+  showMusic(index);
+  playMusic();
+  cover.classList.remove("hidden");
+  playlistBox.classList.add("hidden");
+}
+
 // Window //
 
 window.addEventListener("load", () => {
-  showMusic();
+  showMusic(index);
 });
+
+window.selectMusic = selectMusic;
