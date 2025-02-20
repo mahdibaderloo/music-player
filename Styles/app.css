@@ -1485,6 +1485,9 @@
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
   }
+  .bg-slate-400 {
+    background-color: var(--color-slate-400);
+  }
   .bg-slate-900 {
     background-color: var(--color-slate-900);
   }
