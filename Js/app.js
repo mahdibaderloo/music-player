@@ -137,11 +137,11 @@ function createPlaylist(item) {
   playlistBox.insertAdjacentHTML(
     "beforeend",
     `
-             <li class="flex gap-3 shadow p-1 mb-1.5">
+             <li id="${item.id}" class="flex items-center gap-3 shadow p-1 mb-1.5 cursor-pointer">
             <img src="${item.cover}" alt="" class="w-14 h-14 rounded-lg" />
             <div>
-              <p class="font-bold text-2xl dark:text-white">${item.musicName}</p>
-              <p class="dark:text-slate-400">${item.singer}</p>
+              <p class="font-bold dark:text-white">${item.musicName}</p>
+              <p class="text-sm dark:text-slate-400">${item.singer}</p>
             </div>
           </li>
     `
