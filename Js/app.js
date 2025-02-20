@@ -13,6 +13,7 @@ const dislike = document.getElementById("dislike");
 const currentTime = document.getElementById("current-time");
 const duration = document.getElementById("duration");
 const progressBar = document.getElementById("progress");
+const progressBarBox = document.getElementById("progress-box");
 const playlist = document.getElementById("playlist");
 const playlistBox = document.getElementById("playlist-box");
 const prev = document.getElementById("prev");
@@ -95,6 +96,8 @@ function nextMusic() {
     index = 0;
   }
   showMusic(index);
+  currentMusicTime = 0;
+  audio.currentTime = currentMusicTime;
   playMusic();
 }
 
@@ -106,6 +109,8 @@ prev.addEventListener("click", () => {
     index = media.length - 1;
   }
   showMusic(index);
+  currentMusicTime = 0;
+  audio.currentTime = currentMusicTime;
   playMusic();
 });
 
@@ -246,7 +251,20 @@ function updateProgressBar(e) {
   }
 }
 
-// audio.addEventListener("", nextMusic());
+// Set Progress Bar //
+
+progressBarBox.addEventListener("click", setProgressBar);
+
+function setProgressBar(e) {
+  playMusic();
+  const width = this.clientWidth;
+  const clickX = e.offsetX;
+  const duration = audio.duration;
+  audio.currentTime = (clickX / width) * duration;
+}
+
+// Audio Element //
+
 audio.addEventListener("loadeddata", showDuration);
 audio.addEventListener("timeupdate", updateProgressBar);
 
