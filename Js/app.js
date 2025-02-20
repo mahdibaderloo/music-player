@@ -61,6 +61,9 @@ play.addEventListener("click", () => {
 });
 
 function playMusic() {
+  if (currentMusicTime !== 0) {
+    audio.currentTime = currentMusicTime;
+  }
   audio.play();
   isPlaying = true;
 
