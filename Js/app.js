@@ -12,6 +12,7 @@ const like = document.getElementById("like");
 const dislike = document.getElementById("dislike");
 const currentTime = document.getElementById("current-time");
 const duration = document.getElementById("duration");
+const progressBar = document.getElementById("progress");
 const playlist = document.getElementById("playlist");
 const playlistBox = document.getElementById("playlist-box");
 const prev = document.getElementById("prev");
@@ -26,6 +27,7 @@ const shuffle = document.getElementById("shuffle");
 
 let index = 0;
 let isPlaying = false;
+let currentMusicTime = 0;
 
 // Dark And Light Mode //
 
@@ -59,7 +61,6 @@ play.addEventListener("click", () => {
 });
 
 function playMusic() {
-  audio.load();
   audio.play();
   isPlaying = true;
 
@@ -70,12 +71,18 @@ function playMusic() {
 // Pause Music //
 
 pause.addEventListener("click", () => {
+  pauseMusic();
+});
+
+function pauseMusic() {
   audio.pause();
   isPlaying = false;
 
   play.classList.remove("hidden");
   pause.classList.add("hidden");
-});
+
+  console.log(currentMusicTime);
+}
 
 // Next Music //
 
@@ -195,9 +202,45 @@ function selectMusic(el) {
   playlistBox.classList.add("hidden");
 }
 
+// Show Music Duration //
+
+function showDuration(e) {
+  const musicDuration = e.srcElement.duration;
+
+  let durationMinutes = Math.floor(musicDuration / 60);
+  let durationSeconds = Math.floor(musicDuration % 60);
+
+  if (durationSeconds < 10) {
+    durationSeconds = "0" + durationSeconds;
+  }
+
+  if (durationSeconds) {
+    duration.innerHTML = durationMinutes + ":" + durationSeconds;
+  }
+}
+
 // Update Duration //
 
-audio.addEventListener("ended", nextMusic());
+function updateProgressBar(e) {
+  const musicDuration = e.srcElement.duration;
+
+  if (isPlaying) {
+    currentMusicTime = e.srcElement.currentTime;
+    const progressPercent = (currentMusicTime / musicDuration) * 100;
+    progressBar.style.width = progressPercent + "%";
+
+    const currentMinutes = Math.floor(currentMusicTime / 60);
+    let currentSeconds = Math.floor(currentMusicTime % 60);
+    if (currentSeconds < 10) {
+      currentSeconds = "0" + currentSeconds;
+    }
+    currentTime.textContent = currentMinutes + ":" + currentSeconds;
+  }
+}
+
+// audio.addEventListener("", nextMusic());
+audio.addEventListener("loadeddata", showDuration);
+audio.addEventListener("timeupdate", updateProgressBar);
 
 // Window //
 
