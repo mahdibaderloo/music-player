@@ -92,27 +92,35 @@ next.addEventListener("click", () => {
 });
 
 function nextMusic() {
-  index++;
-  if (index === media.length) {
-    index = 0;
+  if (!shuffle.classList.contains("hidden")) {
+    shufflePlay();
+  } else {
+    index++;
+    if (index === media.length) {
+      index = 0;
+    }
+    showMusic(index);
+    currentMusicTime = 0;
+    audio.currentTime = currentMusicTime;
+    playMusic();
   }
-  showMusic(index);
-  currentMusicTime = 0;
-  audio.currentTime = currentMusicTime;
-  playMusic();
 }
 
 // Prev Music //
 
 prev.addEventListener("click", () => {
-  index--;
-  if (index === -1) {
-    index = media.length - 1;
+  if (!shuffle.classList.contains("hidden")) {
+    shufflePlay();
+  } else {
+    index--;
+    if (index === -1) {
+      index = media.length - 1;
+    }
+    showMusic(index);
+    currentMusicTime = 0;
+    audio.currentTime = currentMusicTime;
+    playMusic();
   }
-  showMusic(index);
-  currentMusicTime = 0;
-  audio.currentTime = currentMusicTime;
-  playMusic();
 });
 
 // Repeat //
@@ -144,7 +152,7 @@ function repeatOneMusic() {
 function shufflePlay() {
   let randomIndex = Math.floor(Math.random() * media.length);
   index = randomIndex;
-  showMusic(index);
+  showMusic(randomIndex);
   playMusic();
 }
 
@@ -282,13 +290,14 @@ function setProgressBar(e) {
 audio.addEventListener("loadeddata", showDuration);
 audio.addEventListener("timeupdate", updateProgressBar);
 audio.addEventListener("ended", () => {
-  if (repeatOne.className !== "hidden") {
+  if (!repeatOne.classList.contains("hidden")) {
+    console.log("repeat");
     repeatOneMusic();
-  }
-  if (shuffle.className !== "hidden") {
+  } else if (!shuffle.classList.contains("hidden")) {
     shufflePlay();
+  } else {
+    nextMusic();
   }
-  nextMusic();
 });
 
 // Window //
