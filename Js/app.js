@@ -47,10 +47,10 @@ light.addEventListener("click", () => {
 // Show Music //
 
 function showMusic(index) {
+  audio.src = media[index].src;
   cover.src = media[index].cover;
   musicName.innerHTML = media[index].musicName;
   singer.innerHTML = media[index].singer;
-  audio.src = media[index].src;
 
   changeLike();
 }
@@ -127,8 +127,6 @@ repeatOne.addEventListener("click", () => {
   repeat.classList.add("hidden");
   repeatOne.classList.add("hidden");
   shuffle.classList.remove("hidden");
-
-  shufflePlay();
 });
 
 shuffle.addEventListener("click", () => {
@@ -139,16 +137,15 @@ shuffle.addEventListener("click", () => {
 
 function repeatOneMusic() {
   let currentIndex = index;
-  console.log(audio.currentTime);
   showMusic(currentIndex);
   playMusic();
 }
 
 function shufflePlay() {
   let randomIndex = Math.floor(Math.random() * media.length);
-  console.log(randomIndex);
-  // showMusic(index)
-  // playMusic()
+  index = randomIndex;
+  showMusic(index);
+  playMusic();
 }
 
 // Playlist //
@@ -287,11 +284,11 @@ audio.addEventListener("timeupdate", updateProgressBar);
 audio.addEventListener("ended", () => {
   if (repeatOne.className !== "hidden") {
     repeatOneMusic();
-  } else if (shuffle.className !== "hidden") {
-    shufflePlay();
-  } else {
-    nextMusic();
   }
+  if (shuffle.className !== "hidden") {
+    shufflePlay();
+  }
+  nextMusic();
 });
 
 // Window //
