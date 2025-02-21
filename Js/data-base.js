@@ -3,7 +3,7 @@ const media = [
     id: 1,
     musicName: "Be Donya Nemidamesh",
     singer: "Shervin",
-    src: "https://dl.ganja2music.com/Ganja2Music/Archive/S/Shervin%20Hajipour/Single/Shervin%20Hajipour%20-%20Be%20Donya%20Nemidamesh.mp3",
+    src: "https://dl.musicdel.ir/tag/music/1401/03/25/Shervin%20Hajiaghapour%20-%20Be%20Donya%20Nemidamesh%20(320).mp3",
     cover:
       "https://www.ganja2music.com/Image/Post/2.2024/450/shervin-hajipour-8211-be-donya-nemidamesh_450.jpg",
     like: false,
@@ -46,7 +46,7 @@ const media = [
     id: 6,
     musicName: "Kenaram",
     singer: "Rez",
-    src: "http://dl.spotifymusic.ir/Music/2017/Rez/Rez%20-%20Kenaram%20128%20[spotifymusic.ir].mp3",
+    src: "https://dl2.limusic.org/Music/2024/11/29/Rez%20-%20Kenaram.mp3",
     cover: "https://i1.sndcdn.com/artworks-000247983740-30gidf-t500x500.jpg",
     like: false,
   },
@@ -158,7 +158,7 @@ const media = [
     like: false,
   },
   {
-    id: 18,
+    id: 19,
     musicName: "Luther",
     singer: "Kendrick Lamar",
     src: "https://dl.behmelody.in/1403/09/04/Kendrick%20Lamar%20-%20luther%20(with%20sza).mp3",
@@ -288,6 +288,69 @@ const media = [
     src: "https://cdn1.viliostreams.com/Music/1395/02/Amir%20Tataloo%20-%20Ba%20To.mp3",
     cover:
       "https://systemmusic.ir/wp-content/uploads/2022/07/amir-tataloo-ba-to.jpg",
+  },
+  {
+    id: 36,
+    musicName: "Ghalbe Mani",
+    singer: "Haamim",
+    src: "https://dls.musics-fa.com/song/alibz/dlswm/Haamim%20-%20Ghalbe%20Mani%20Piano%20(320).mp3?_=2",
+    cover:
+      "https://www.ganja2music.com/Image/Post/2.2024/450/haamim-8211-ghalbe-mani_450.jpg",
+  },
+  {
+    id: 37,
+    musicName: "Kafe Tehroon",
+    singer: "Moein Z",
+    src: "https://dl.sevilmusics.com/cdn/music/srvrg/Moein%20Z%20-%20Kafe%20Tehroon%20[SevilMusic].mp3",
+    cover: "https://i1.sndcdn.com/artworks-HS8N4j8wwJ15-0-t500x500.jpg",
+  },
+  {
+    id: 38,
+    musicName: "Haram",
+    singer: "Viguen",
+    src: "https://dlrrooz.top/2024/music/7/New/Viguen%20Haram.mp3",
+    cover:
+      "https://aftabmusic.com/wp-content/uploads/2024/09/%D8%AC%D8%AF%DB%8C%D8%AF.webp",
+  },
+  {
+    id: 39,
+    musicName: "Abado Yek Rooz",
+    singer: "Masin",
+    src: "https://dl.solahangs.com/Music/1402/09/M/128/Masin%20-%20Abado%20Yek%20Rooz%20%28128%29.mp3",
+    cover:
+      "https://www.limusic.org/wp-content/uploads/2023/12/hs-Masin-Abado-Yek-Rooz.jpg.pagespeed.ce.wduAipiBjf.jpg",
+  },
+  {
+    id: 40,
+    musicName: "Beyt",
+    singer: "Ehsan Daryadel",
+    src: "https://irsv.upmusics.com/AliBZ/Ehsan%20Daryadel%20%7C%20Beat%20(320).mp3",
+    cover:
+      "https://musicdel.ir/wp-content/uploads/2023/12/%D8%A8%DB%8C%D8%AA.jpg",
+  },
+  {
+    id: 41,
+    musicName: "Afsaneh",
+    singer: "The Don & Sijal",
+    src: "https://cloud.musicsmelon.com/Music/Sijal%20-%20Afsaneh%20(128).mp3",
+    cover:
+      "https://solahangs.com/wp-content/uploads/2023/05/Sijal-The-Don-Afsaneh-img.jpg",
+  },
+  {
+    id: 42,
+    musicName: "Khoob Shod",
+    singer: "Homayoun Shajarian",
+    src: "https://dl.rozmusic.com/Music/1396/07/05/Homayoun%20Shajarian%20-%20Khoob%20Shod%20(128).mp3",
+    cover:
+      "https://i1.sndcdn.com/artworks-0nMQrQhaylFOHIvB-QGQIfA-t500x500.jpg",
+  },
+  {
+    id: 43,
+    musicName: "Mage Chand Bar Zendam",
+    singer: "Ali Yasini",
+    src: "https://irsv.upmusics.com/AliBZ/Ali%20Yasini%20-%20Mage%20Chand%20Bar%20Zendam%20(320).mp3",
+    cover:
+      "https://tabamusic.com/wp-content/uploads/2024/03/Ali-Yasini-Mage-Chand-Bar-Zendam.jpg",
   },
 ];
 
