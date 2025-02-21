@@ -267,6 +267,9 @@ function setProgressBar(e) {
 
 audio.addEventListener("loadeddata", showDuration);
 audio.addEventListener("timeupdate", updateProgressBar);
+audio.addEventListener("ended", () => {
+  nextMusic();
+});
 
 // Window //
 
