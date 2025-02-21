@@ -62,6 +62,7 @@ play.addEventListener("click", () => {
 });
 
 function playMusic() {
+  currentMusicTime = 0;
   audio.currentTime = currentMusicTime;
   audio.play();
   isPlaying = true;
@@ -126,6 +127,8 @@ repeatOne.addEventListener("click", () => {
   repeat.classList.add("hidden");
   repeatOne.classList.add("hidden");
   shuffle.classList.remove("hidden");
+
+  shufflePlay();
 });
 
 shuffle.addEventListener("click", () => {
@@ -133,6 +136,20 @@ shuffle.addEventListener("click", () => {
   repeatOne.classList.add("hidden");
   shuffle.classList.add("hidden");
 });
+
+function repeatOneMusic() {
+  let currentIndex = index;
+  console.log(audio.currentTime);
+  showMusic(currentIndex);
+  playMusic();
+}
+
+function shufflePlay() {
+  let randomIndex = Math.floor(Math.random() * media.length);
+  console.log(randomIndex);
+  // showMusic(index)
+  // playMusic()
+}
 
 // Playlist //
 
@@ -268,7 +285,13 @@ function setProgressBar(e) {
 audio.addEventListener("loadeddata", showDuration);
 audio.addEventListener("timeupdate", updateProgressBar);
 audio.addEventListener("ended", () => {
-  nextMusic();
+  if (repeatOne.className !== "hidden") {
+    repeatOneMusic();
+  } else if (shuffle.className !== "hidden") {
+    shufflePlay();
+  } else {
+    nextMusic();
+  }
 });
 
 // Window //
