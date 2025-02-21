@@ -1,5 +1,5 @@
 <h1>
-<img src="https://raw.githubusercontent.com/mahdibaderloo/online-calculator/09ee1698e8d5a1b94d9aa470018465fb6cfa334c/Images/calculator-svg.svg" width="50px"/>
+<img src="https://raw.githubusercontent.com/mahdibaderloo/music-player/4cb0af1f81d86586deb93b8b6c6cca7f74dc4009/music-notes-svgrepo-com.svg" width="50px"/>
 Music Player
 </h1>
 
