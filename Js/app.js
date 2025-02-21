@@ -199,7 +199,7 @@ function changeLike() {
 // Select Music //
 
 function selectMusic(el) {
-  let index = el.id - 1;
+  index = el.id - 1;
 
   let elementPic = el.children[0].src;
   let elementMusicName = el.children[1].children[0].textContent;
