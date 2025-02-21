@@ -185,7 +185,7 @@ const media = [
     id: 22,
     musicName: "Divoonegi",
     singer: "Sirvan Khosravi",
-    src: "https://dl.faza2music.net/music/1403/02/30/Sirvan%20Khosravi%20-%20Divoonegi%20(Black%20Box)%20(128).mp3",
+    src: "https://irsv.upmusics.com/99/Sirvan%20Khosravi%20-%20Divoonegi%20(320).mp3",
     cover:
       "https://www.ganja2music.com/Image/Post/7.2021/Sirvan%20Khosravi%20-%20Divoonegi.jpg",
   },
@@ -248,6 +248,46 @@ const media = [
     singer: "Siavash Ghomayshi",
     src: "https://dl.aftabmusic.com/1403/3/album/SarGozasht%20Siavash%20Ghomayshi/01%20Arezou.mp3",
     cover: "https://i1.sndcdn.com/artworks-000257615417-85t3v7-t500x500.jpg",
+  },
+  {
+    id: 31,
+    musicName: "Ta Key",
+    singer: "Shervin",
+    src: "https://dl.sevilmusics.com/cdn/music/srvrg/Shervin%20Hajipour%20-%20Ta%20Key%20[SevilMusic].mp3",
+    cover:
+      "https://www.ganja2music.com/Image/Post/2.2025/Shervin%20Hajipour%20-%20Ta%20Key.jpg",
+  },
+  {
+    id: 32,
+    musicName: "Marize Ham",
+    singer: "Hiphopologist & Sogand",
+    src: "https://dl.musictaj.com/song403/zmstn/Hiphopologist%20x%20Sogand%20-%20Marize%20Ham.mp3",
+    cover:
+      "https://i1.sndcdn.com/artworks-yWNnySLNmj0xG33P-3erWdg-t500x500.jpg",
+  },
+  {
+    id: 33,
+    musicName: "Khone Naria",
+    singer: "Mahyar & Shayea",
+    src: "https://dl.musictaj.com/song402/se/Mahyar%20va%20Shayea%20-%20Khoone%20Naria.mp3",
+    cover:
+      "https://i1.sndcdn.com/artworks-9CCR6WFgKTtLTPyL-7kzgmw-t1080x1080.png",
+  },
+  {
+    id: 34,
+    musicName: "You're Special",
+    singer: "NF",
+    src: "https://files.ceenaija.com/wp-content/uploads/music/2022/04/NF_-_Youre_Special_CeeNaija.com_.mp3",
+    cover:
+      "https://sw2music.ir/wp-content/uploads/2022/08/4776-NF-You're-Special.jpg",
+  },
+  {
+    id: 35,
+    musicName: "Ba To",
+    singer: "Amir Tataloo",
+    src: "https://cdn1.viliostreams.com/Music/1395/02/Amir%20Tataloo%20-%20Ba%20To.mp3",
+    cover:
+      "https://systemmusic.ir/wp-content/uploads/2022/07/amir-tataloo-ba-to.jpg",
   },
 ];
 
