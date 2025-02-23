@@ -62,8 +62,6 @@ play.addEventListener("click", () => {
 });
 
 function playMusic() {
-  currentMusicTime = 0;
-  audio.currentTime = currentMusicTime;
   audio.play();
   isPlaying = true;
 
@@ -79,6 +77,7 @@ pause.addEventListener("click", () => {
 
 function pauseMusic() {
   audio.pause();
+  currentMusicTime = audio.currentTime;
   isPlaying = false;
 
   play.classList.remove("hidden");
