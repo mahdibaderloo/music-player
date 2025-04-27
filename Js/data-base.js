@@ -441,14 +441,6 @@ const media = [
   },
   {
     id: 55,
-    musicName: "Siah sefid",
-    singer: "Haamim",
-    src: "https://dl.rozmusic.com/Music/1400/07/18/Haamim%20-%20Sia%20Sefid%20%28128%29.mp3",
-    cover:
-      "https://webahang.ir/wp-content/uploads/2021/06/haamim-sia-sefid-2.jpg",
-  },
-  {
-    id: 56,
     musicName: "To",
     singer: "Erfan Tahmasbi",
     src: "https://dl.rozmusic.com/Music/1402/06/11/Erfan%20Tahmasbi%20-%20To%20%28128%29.mp3",
@@ -456,19 +448,27 @@ const media = [
       "https://rozmusic.com/wp-content/uploads/2023/09/Erfan-Tahmasbi-To.jpg",
   },
   {
-    id: 57,
+    id: 56,
     musicName: "Ehtiaj Daram",
     singer: "Shayea",
     src: "https://dl.pmcmusic.tv/1398/07/Shayea%20-%20Injaneb%20[128]/04.%20Ehtiaj%20Daram.mp3",
     cover: "https://ir-music.ir/wp-content/uploads/2019/09/shaaa.jpg",
   },
   {
-    id: 58,
+    id: 57,
     musicName: "Maste Cheshat (Remix)",
     singer: "Erfan & Asadi",
     src: "https://dl4.avaz-kurd.ir/music/music2/Erfan%20&%20Ebi%20&%20Dani%20Asadi-Mast%20Cheshat%20128.mp3",
     cover:
       "https://ememay.ir/music/wp-content/uploads/2025/02/trackname1-346.jpeg",
+  },
+  {
+    id: 58,
+    musicName: "Be To Mirese",
+    singer: "Armin 2AFM",
+    src: "https://dl.rozmusic.com/Music/1404/02/05/Armin%20Zarei%20-%20Be%20To%20Mirese%20%28128%29.mp3",
+    cover:
+      "https://rozmusic.com/wp-content/uploads/2025/04/Armin-Zarei-Be-To-Mirese.jpg",
   },
   {
     id: 59,
@@ -535,14 +535,6 @@ const media = [
   },
   {
     id: 67,
-    musicName: "Be To Mirese",
-    singer: "Armin 2AFM",
-    src: "https://dl.rozmusic.com/Music/1404/02/05/Armin%20Zarei%20-%20Be%20To%20Mirese%20%28128%29.mp3",
-    cover:
-      "https://rozmusic.com/wp-content/uploads/2025/04/Armin-Zarei-Be-To-Mirese.jpg",
-  },
-  {
-    id: 68,
     musicName: "Jaddeye Yek Tarafeh",
     singer: "Morteza Pashaei",
     src: "https://dl.rozmusic.com/Music/1400/04/26/Morteza%20Pashaei%20-%20Jaddeye%20Yek%20Tarafeh%20%28128%29.mp3",
