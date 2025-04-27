@@ -245,7 +245,7 @@ const media = [
   {
     id: 30,
     musicName: "Arezoo",
-    singer: "Siavash Ghomayshi",
+    singer: "Siavash Ghomeyshi",
     src: "https://dl.aftabmusic.com/1403/3/album/SarGozasht%20Siavash%20Ghomayshi/01%20Arezou.mp3",
     cover: "https://i1.sndcdn.com/artworks-000257615417-85t3v7-t500x500.jpg",
   },
@@ -440,7 +440,7 @@ const media = [
     cover: "https://musicrooz.com/wp-content/uploads/2023/08/Ebi-Khalij.jpg",
   },
   {
-    id: 56,
+    id: 55,
     musicName: "Siah sefid",
     singer: "Haamim",
     src: "https://dl.rozmusic.com/Music/1400/07/18/Haamim%20-%20Sia%20Sefid%20%28128%29.mp3",
@@ -448,7 +448,7 @@ const media = [
       "https://webahang.ir/wp-content/uploads/2021/06/haamim-sia-sefid-2.jpg",
   },
   {
-    id: 57,
+    id: 56,
     musicName: "To",
     singer: "Erfan Tahmasbi",
     src: "https://dl.rozmusic.com/Music/1402/06/11/Erfan%20Tahmasbi%20-%20To%20%28128%29.mp3",
@@ -456,15 +456,14 @@ const media = [
       "https://rozmusic.com/wp-content/uploads/2023/09/Erfan-Tahmasbi-To.jpg",
   },
   {
-    id: 58,
+    id: 57,
     musicName: "Ehtiaj Daram",
     singer: "Shayea",
     src: "https://dl.pmcmusic.tv/1398/07/Shayea%20-%20Injaneb%20[128]/04.%20Ehtiaj%20Daram.mp3",
-    cover:
-      "https://melodyboss.com/wp-content/uploads/2024/08/hs-shayea-injaneb.jpg",
+    cover: "https://ir-music.ir/wp-content/uploads/2019/09/shaaa.jpg",
   },
   {
-    id: 59,
+    id: 58,
     musicName: "Maste Cheshat (Remix)",
     singer: "Erfan & Asadi",
     src: "https://dl4.avaz-kurd.ir/music/music2/Erfan%20&%20Ebi%20&%20Dani%20Asadi-Mast%20Cheshat%20128.mp3",
@@ -472,12 +471,83 @@ const media = [
       "https://ememay.ir/music/wp-content/uploads/2025/02/trackname1-346.jpeg",
   },
   {
-    id: 60,
+    id: 59,
     musicName: "To Fargh Dari",
     singer: "Mahyar",
     src: "https://musictaj.musicmelllnet.com/song403/bhr/Mahyar%20-%20To%20Fargh%20Dari.mp3",
     cover:
       "https://sv2.mybia2music.com/s2/Music/1403/08/26/Mahyar/Mahyar%20-%20To%20Fargh%20Dari.jpg",
+  },
+  {
+    id: 60,
+    musicName: "Roo Be Room",
+    singer: "Behzad Leito & Sepehr Khalse & Yasna",
+    src: "https://dl.ahlemusic.eu/music403/bahar/Behzad%20Leito%20Ft.%20Sepehr%20Khalse%20&%20Yasna%20-%20Ro%20Be%20Rom.mp3",
+    cover:
+      "https://solahangs.com/wp-content/uploads/2024/07/Behzad-Leito-Spicy-album.jpg",
+  },
+  {
+    id: 61,
+    musicName: "Mano Bespar",
+    singer: "Mehrad Hidden & Kaviano",
+    src: "https://musictaj.musicmelllnet.com/song403/zmstn/Mehrad%20Hidden%20-%20Mano%20Bespar.mp3",
+    cover:
+      "https://sultanmusic.ir/wp-content/uploads/2025/02/Mehrad-Hidden-Mano-Bespar.jpg",
+  },
+  {
+    id: 62,
+    musicName: "To Bemoon",
+    singer: "Sohel",
+    src: "https://dl3.ofoghmusic.ir/music/dlfile/AgADKTQAAnDUuEk.mp3",
+    cover:
+      "https://i1.sndcdn.com/artworks-ukFh8EzZZ9tHbIy7-WCG02g-t500x500.jpg",
+  },
+  {
+    id: 63,
+    musicName: "Ba To Inam",
+    singer: "Haamim",
+    src: "https://dl.rozmusic.com/Music/1403/12/28/Haamim%20-%20Ba%20To%20Inam%20%28128%29.mp3",
+    cover:
+      "https://rozmusic.com/wp-content/uploads/2025/03/Haamim-Ba-To-Inam.jpg",
+  },
+  {
+    id: 64,
+    musicName: "Nesfe Shab",
+    singer: "Ali Yasini",
+    src: "https://dl.rozmusic.com/Music/1401/11/30/Ali%20Yasini%20-%20Nesfe%20Shab%20%28128%29.mp3",
+    cover:
+      "https://rozmusic.com/wp-content/uploads/2023/02/Ali-Yasini-Nesfe-Shab.jpg",
+  },
+  {
+    id: 65,
+    musicName: "Divaneh",
+    singer: "Reza Bahram",
+    src: "https://irsv.upmusics.com/Downloads/Musics/Reza%20Bahram%20%7C%20Divaneh%20(320).mp3",
+    cover:
+      "https://upmusics.com/wp-content/uploads/2018/11/Reza-Bahram-Divaneh.jpg",
+  },
+  {
+    id: 66,
+    musicName: "Setareh",
+    singer: "Siavash Ghomeyshi",
+    src: "https://dl.mehrdl.top/Music/A/A/Album/Siavash%20Ghomayshi%20-%20Sargozasht/07%20Setareh.mp3?_=1",
+    cover: "https://i1.sndcdn.com/artworks-000257615417-85t3v7-t500x500.jpg",
+  },
+  {
+    id: 67,
+    musicName: "Be To Mirese",
+    singer: "Armin 2AFM",
+    src: "https://dl.rozmusic.com/Music/1404/02/05/Armin%20Zarei%20-%20Be%20To%20Mirese%20%28128%29.mp3",
+    cover:
+      "https://rozmusic.com/wp-content/uploads/2025/04/Armin-Zarei-Be-To-Mirese.jpg",
+  },
+  {
+    id: 68,
+    musicName: "Jaddeye Yek Tarafeh",
+    singer: "Morteza Pashaei",
+    src: "https://dl.rozmusic.com/Music/1400/04/26/Morteza%20Pashaei%20-%20Jaddeye%20Yek%20Tarafeh%20%28128%29.mp3",
+    cover:
+      "https://static.navaak.com/images/albums/55d1721382e00544567798c5/55d1721382e00544567798c5.jpg",
   },
 ];
 
