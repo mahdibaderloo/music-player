@@ -408,6 +408,77 @@ const media = [
     cover:
       "https://upmusics.com/wp-content/uploads/2018/01/Morteza-Pashaei-Negarane-Mani.jpg",
   },
+  {
+    id: 51,
+    musicName: "Hayahoo (Acoustic Version)",
+    singer: "Koorosh & Tamara",
+    src: "https://ts18.tarafdari.com/contents/user793663/content-sound/hayahoo.mp3",
+    cover:
+      "https://myteh-song.biz/wp-content/uploads/2020/10/hs-Koorosh-Hayahoo-Ft-Tamara-Acoustic-Version.jpg",
+  },
+  {
+    id: 52,
+    musicName: "Dige Chi Kame",
+    singer: "Amir Khalvat Ft Darab",
+    src: "https://dl.shabamusic.com/Music/1403/02/14/%20Amir%20Khalvat%20Ft%20Darab%20-%20Dige%20Chi%20Kame.mp3",
+    cover:
+      "https://shabamusic.com/wp-content/uploads/2024/05/-Amir-Khalvat-Ft-Darab-Dige-Chi-Kame.jpg",
+  },
+  {
+    id: 53,
+    musicName: "Del",
+    singer: "Sami Low & Raha & The Don",
+    src: "https://ts16.tarafdari.com/contents/user766090/content-sound/ey_ashegh_shode_in_del.mp3",
+    cover:
+      "https://ts16.tarafdari.com/contents/user766090/content-sound/screenshot_20231205_222845.jpg",
+  },
+  {
+    id: 54,
+    musicName: "Kolbeh",
+    singer: "Ebi",
+    src: "https://ts15.tarafdari.com/contents/user804327/content-sound/08_kolbeh_man_320.mp3",
+    cover: "https://musicrooz.com/wp-content/uploads/2023/08/Ebi-Khalij.jpg",
+  },
+  {
+    id: 56,
+    musicName: "Siah sefid",
+    singer: "Haamim",
+    src: "https://dl.rozmusic.com/Music/1400/07/18/Haamim%20-%20Sia%20Sefid%20%28128%29.mp3",
+    cover:
+      "https://webahang.ir/wp-content/uploads/2021/06/haamim-sia-sefid-2.jpg",
+  },
+  {
+    id: 57,
+    musicName: "To",
+    singer: "Erfan Tahmasbi",
+    src: "https://dl.rozmusic.com/Music/1402/06/11/Erfan%20Tahmasbi%20-%20To%20%28128%29.mp3",
+    cover:
+      "https://rozmusic.com/wp-content/uploads/2023/09/Erfan-Tahmasbi-To.jpg",
+  },
+  {
+    id: 58,
+    musicName: "Ehtiaj Daram",
+    singer: "Shayea",
+    src: "https://dl.pmcmusic.tv/1398/07/Shayea%20-%20Injaneb%20[128]/04.%20Ehtiaj%20Daram.mp3",
+    cover:
+      "https://melodyboss.com/wp-content/uploads/2024/08/hs-shayea-injaneb.jpg",
+  },
+  {
+    id: 59,
+    musicName: "Maste Cheshat (Remix)",
+    singer: "Erfan & Asadi",
+    src: "https://dl4.avaz-kurd.ir/music/music2/Erfan%20&%20Ebi%20&%20Dani%20Asadi-Mast%20Cheshat%20128.mp3",
+    cover:
+      "https://ememay.ir/music/wp-content/uploads/2025/02/trackname1-346.jpeg",
+  },
+  {
+    id: 60,
+    musicName: "To Fargh Dari",
+    singer: "Mahyar",
+    src: "https://musictaj.musicmelllnet.com/song403/bhr/Mahyar%20-%20To%20Fargh%20Dari.mp3",
+    cover:
+      "https://sv2.mybia2music.com/s2/Music/1403/08/26/Mahyar/Mahyar%20-%20To%20Fargh%20Dari.jpg",
+  },
 ];
 
 export { media };
