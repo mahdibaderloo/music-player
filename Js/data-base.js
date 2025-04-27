@@ -352,6 +352,62 @@ const media = [
     cover:
       "https://tabamusic.com/wp-content/uploads/2024/03/Ali-Yasini-Mage-Chand-Bar-Zendam.jpg",
   },
+  {
+    id: 44,
+    musicName: "Haz Kardam",
+    singer: "Shahrokh",
+    src: "https://jenabmusic.musitraf.com/93/farvardin/Shahrokh%20-%20Haz%20Kardam.mp3",
+    cover:
+      "https://www.jenabmusic.com/wp-content/uploads/2014/04/Shahrokh-300x300.jpg",
+  },
+  {
+    id: 45,
+    musicName: "Vase Ye Lahze",
+    singer: "Hoomaan & Chvrsi",
+    src: "https://musictaj.musicmelllnet.com/song403/bhr/Hoomaan%20-%20Vase%20Ye%20Lahze.mp3",
+    cover:
+      "https://musichi.ir/wp-content/uploads/2024/10/Hoomaan-&-Chvrsi-Vase-Ye-Lahze-2024-10-16-21-23.jpg",
+  },
+  {
+    id: 46,
+    musicName: "Begoo Binam",
+    singer: "Armin 2AFM",
+    src: "https://dl.rozmusic.com/Music/1401/11/17/Armin%20Zarei%20-%20Begoo%20Binam%20%28128%29.mp3",
+    cover:
+      "https://rozmusic.com/wp-content/uploads/2023/02/Armin-Zarei-Begoo-Binam.jpg",
+  },
+  {
+    id: 47,
+    musicName: "Callifornia",
+    singer: "Young Sudden & Sepehr Khalse",
+    src: "https://ts18.tarafdari.com/contents/user860318/content-sound/young_sudden_x_sepehr_khalse_-_california.mp3",
+    cover:
+      "https://kelmusic.ir/wp-content/uploads/2024/09/Young-Sudden-x-Sepehr-Khalse-California.webp",
+  },
+  {
+    id: 48,
+    musicName: "Sare To",
+    singer: "Shayan Yo",
+    src: "https://ts14.tarafdari.com/contents/user764868/content-sound/shayan_yo_-_sare_to.mp3",
+    cover:
+      "https://sultanmusic.ir/wp-content/uploads/2023/06/Shayan-Yo-Sare-to.jpg",
+  },
+  {
+    id: 49,
+    musicName: "Kerm",
+    singer: "Shayea",
+    src: "https://www.tarafdari.com/sites/default/files/contents/user739775/content-sound/shayea_-_kerm-_400656973395138658.mp3",
+    cover:
+      "https://www.tarafdari.com/sites/default/files/contents/user739775/content-sound/album_1738165474774.png",
+  },
+  {
+    id: 50,
+    musicName: "Negarane Mani",
+    singer: "Morteza Pashaei",
+    src: "https://irsv.upmusics.com/Downloads/Musics/Morteza%20Pashaei%20-%20Negarane%20Mani%20(320).mp3",
+    cover:
+      "https://upmusics.com/wp-content/uploads/2018/01/Morteza-Pashaei-Negarane-Mani.jpg",
+  },
 ];
 
 export { media };
