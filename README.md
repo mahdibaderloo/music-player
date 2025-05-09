@@ -6,9 +6,11 @@ Music Player
 <br>
 <br>
 
-> Dedicate this playlist to someone you love
+> ❤️‍🩹 Dedicate this playlist to someone you love
 >
-> This is a responsive web-based music player built with HTML, CSS, Tailwind and JavaScript. You can play, pause, skip tracks, and enjoy a smooth user experience with basic music controls.
+> 🎶 This is a responsive web-based music player
+> 🔧 built with HTML, CSS, Tailwind and JavaScript.
+> 🪄 You can play, pause, skip tracks, and enjoy a smooth user experience with basic music controls.
 >
 > 🚀 Try it live here:
 > [Music Player Demo](https://mahdibaderloo.github.io/music-player)
