@@ -9,7 +9,9 @@ Music Player
 > ❤️‍🩹 Dedicate this playlist to someone you love
 >
 > 🎶 This is a responsive web-based music player
+>
 > 🔧 built with HTML, CSS, Tailwind and JavaScript.
+>
 > 🪄 You can play, pause, skip tracks, and enjoy a smooth user experience with basic music controls.
 >
 > 🚀 Try it live here:
