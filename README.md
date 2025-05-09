@@ -24,6 +24,7 @@ Music Player
    - Skip to next/previous tracks
    - Responsive and clean UI
    - Smooth animations
+   - Dark mode 
    - Playlist management
    - Repeat & shuffle modes
 
