@@ -10,9 +10,9 @@ Music Player
 >
 > 🎶 This is a responsive web-based music player
 >
-> 🔧 built with HTML, CSS, Tailwind and JavaScript.
+> 🔧 built with HTML, CSS, Tailwind and JavaScript
 >
-> 🪄 You can play, pause, skip tracks, and enjoy a smooth user experience with basic music controls.
+> 🪄 You can play, pause, skip tracks, and enjoy full control over your playlist with features like repeat and shuffle
 >
 > 🚀 Try it live here:
 > [Music Player Demo](https://mahdibaderloo.github.io/music-player)
@@ -24,6 +24,8 @@ Music Player
    - Skip to next/previous tracks
    - Responsive and clean UI
    - Smooth animations
+   - Playlist management
+   - Repeat & shuffle modes
 
 <br>
 
