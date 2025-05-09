@@ -8,13 +8,23 @@ Music Player
 
 > Dedicate this playlist to someone you love
 >
-> Check this <a href="https://mahdibaderloo.github.io/music-player/">URL</a> to see this repo ❤️
+> This is a responsive web-based music player built with HTML, CSS, Tailwind and JavaScript. You can play, pause, skip tracks, and enjoy a smooth user experience with basic music controls.
+>
+> 🚀 Try it live here:
+> [Music Player Demo](https://mahdibaderloo.github.io/music-player)
 
 <br>
 
-### made with :
+- ✨ Features
+   - Play & pause music
+   - Skip to next/previous tracks
+   - Responsive and clean UI
+   - Smooth animations
+
+<br>
+
+### 🛠️ Technologies Used :
 ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![](https://img.shields.io/badge/Tailwind_CSS-38b2ac?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-
